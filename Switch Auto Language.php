@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Switch Auto Language
-Plugin URI: https://pixelpioneerpro.net
+Plugin URI: https://github.com/nemanjafalb/Switch-Auto-Language
 Description: Automatically redirects users from one language to another based on their browser preferences.
 Version: 1.1
 Author: Nemanja Falb
