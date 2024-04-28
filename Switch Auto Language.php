@@ -6,7 +6,7 @@ Description: Automatically redirects users from one language to another based on
 Version: 1.1
 Author: Nemanja Falb
 Author URI: https://pixelpioneerpro.net
-License: GPL2
+License: GPL3
 */
 
 // Adding notification upon plugin activation
@@ -34,6 +34,15 @@ function switch_auto_language_settings_page() {
             <?php settings_fields( 'switch_auto_language_settings_group' ); ?>
             <?php do_settings_sections( 'switch_auto_language_settings_group' ); ?>
             <table class="form-table">
+				<tr valign="top">
+                    <p>
+						Welcome to Switch Auto Language plugin settings! Here you can see your default WordPress language as well as the languages enabled by TranslatePress. All unchecked checkboxes mean that the plugin will automatically redirect every user based on their browser language to the corresponding language of the website. For example, if your browser is set to English, this plugin will automatically redirect you to the English version of the site. Thank you for using this plugin. This is a beta version, and we're soon going live! :)
+					</p>
+                </tr>
+				<tr valign="top">
+                    <th scope="row">Default Language:</th>
+                    <td><?php echo get_locale(); ?></td>
+                </tr>
                 <tr valign="top">
                     <th scope="row">Enabled Languages:</th>
                     <td>
